@@ -434,7 +434,7 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
             break;
 #endif
 #ifdef RGB_MATRIX_ENABLE
-        case TOGGLE_LAYER_COLOR:
+        case BL_TOGG:
             if (record->event.pressed) {
                 keyboard_config.disable_layer_led ^= 1;
                 if (keyboard_config.disable_layer_led) rgb_matrix_set_color_all(0, 0, 0);
